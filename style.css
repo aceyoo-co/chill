@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    width: 100%;
+    background-color: #121212; /* Color de fondo oscuro para la caja del chat */
+    font-family: 'Arial', sans-serif; /* Fuente moderna */
+    color: #e0e0e0; /* Color del texto claro */
+}
+
+.chat-container header {            
+    padding: 16px 0;            /* Color y configuracion del nombre de la aplicacion */ 
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+.chat-container header h2 {
+    color: #ff5722;
+}
+
+.chat-box {
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    padding: 20px; 
+    font-family: 'Montserrat';
+    flex: 1; /* Ocupa el espacio disponible */
+    display: flex;
+    flex-direction: column;
+}
+
+.message {
+    max-width: 75%;
+    margin: 5px 0; /* Espacio entre los mensajes */
+    padding: 12px 16px;
+    border-radius: 10px;
+}
+
+.entrante {
+    background: #2c2c2c;
+    color: whitesmoke;
+    align-self: flex-start; /* Alinea a la izquierda */
+}
+
+.saliente {
+    background: #ff5722;
+    color: #fff;
+    align-self: flex-end; /* Alinea a la derecha */
+}
+
+.input-container {
+    display: flex;
+    font-family: 'Montserrat';
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Bordes redondeados en la parte inferior */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave en la parte superior */
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto ;
+}
+
+.input-container input[type="text"] {
+    flex: 1; /* Ocupa todo el espacio disponible menos el del botón */
+    padding: 12px;
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #333; /* Fondo oscuro para el campo de texto */
+    color: #e0e0e0; /* Color del texto claro */
+    margin-right: 10px; /* Espacio entre el campo de texto y el botón */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra interna */
+}
+
+.input-container input[type="text"]::placeholder {
+    color: #757575; /* Color del texto del placeholder */
+}
+
+.input-container button {
+    padding: 12px 24px;
+    background-color: #ff5722; /* Color de fondo naranja para el botón */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 20px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a una mano */
+    transition: background-color 0.3s, transform 0.2s; /* Transiciones suaves */
+}
+
+.input-container button:hover {
+    background-color: #e64a19; /* Color de fondo más oscuro al pasar el ratón */
+    transform: scale(1.05); /* Escala ligeramente el botón */
+}
+
+.input-container button:active {
+    background-color: #d84315; /* Color de fondo más oscuro al hacer clic */
+    transform: scale(0.95); /* Escala ligeramente el botón al hacer clic */
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212;
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2c2c2c;
+    border-radius: 6px;
+}
+
+::-webkit-slider-thumb:hover {
+    background: #343434;
+}
+
+/*hello*/
